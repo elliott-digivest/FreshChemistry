@@ -1,19 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Playfair+Display:wght@500;600&family=Poppins:wght@400;700&family=Titillium+Web&display=swap');
+
+
+:root{
+  --white: #FFFFFf;
+  --brown: #4c0034;
+  --black: black;
+  --red : #f9435c;
+  --background-grey: #f5f5f5;
+
+}
+
 body{
-   height: 100%;
-    margin: 0;
+    height: 100%;
     font-family: 'Nunito Sans', sans-serif;
   }
 
+.banner-text{
+  font-weight: 300;
+  text-transform: uppercase;
+  font-family:'Playfair Display', serif;
+  font-size: 70px;
+  letter-spacing: -2px;
+}
+
+.container-boxed{
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.learn-more{
+  display: flex;
+  margin: 60px auto;
+  width: 100%;
+  justify-content: space-between;
+}
+.slider-btn{
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--brown);
+  border-color: var(--brown);
+  font-family: 'Nunito Sans', serif;
+  background-color: var(--background-grey);
+  padding: 20px 32px;
+}
 .top-bar {
-  background-color: #4c0034;
+  background-color: var(--brown);
   padding: 8px 12px;
   }
 
 .top-bar p{
   text-align: center;
   font-weight: bold;
-  color: white;
-  font-size: 16px;
+  color: var(--white);
   letter-spacing: 2px;
 }  
 .header {
@@ -25,16 +64,15 @@ body{
 }
 
 .header li {
-  text-align: right;
-  padding: 15px;
+  text-align: center;
+  padding: 20px;
   text-decoration: none;
-  font-size: 18px; 
   line-height: 5px;
-  margin-right: 35px;
+  margin-right: 40px;
 }
 
 .header a{
-  color: black;
+  color: var(--black);
 }
 .header ul {
   display: flex;
@@ -46,24 +84,86 @@ body{
   padding: 12px;
 }
 
-.main{
-  margin-bottom: 45px;
-}
 .slider{
   background-image: url("https://cdn.shopify.com/s/files/1/0172/9639/2246/files/Fresh_Chemistry_Blake_Orange_HomepageTest.jpg?v=1601474530");
-  min-height: 100vh;
+  min-height: 80vh;
+  padding: 35px 0px 0px 40px;
   width: 100%;
   background-size: cover;
 }
-.hero-image {
-  height: 90%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+.highlight-red{
+  color: var(--red);
 }
 
-.hero-text{
-  text-align:left;
+.learn-more img{
+  width: 50%;
+  height: 50vh;
+}
+
+.learn-more h3{
+  color: var(--red);
+}
+.inner-text{
+  padding: 0 5% 0 5%;
+  margin-top: 5%;
+}
+
+.video-text{
+  line-height: 30px;
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.learn-more button{
+  background-color: var(--brown);
+  color: var(--primary-color);
+  padding: 15px 22px;
+  margin: 4px 2px;
+  font-size: 24px;
+}
+
+.products-section{
+  text-align: center;
+  padding: 1% 5% 20% 0;
+  background: var(--background-grey);
+}
+.products-section h1{
+  padding: 40px 0px;
+}
+
+.shop-section{
+   display: flex;
+   justify-content: space-between;
+}
+
+.left-image {
+  height: auto;
+  width: 450px;
+  position: relative;
+  
+}
+.left-image:hover{
+  
+  background: url(../assets/img1a.jpg);
+  background-repeat: no-repeat;
+}
+
+.products-section button{
+  background-color: var(--red);
+  color: var(--white);
+  padding: 15px 22px;
+  margin-top: 50px;
+  font-size: 24px;
+  border: none;
+}
+
+.product-title{
+  font-size: 22px;
+  color: var(--brown);
+  text-align: start;
+  font-weight: bold;
+  padding-top: 30px;
 }
 .footer{
   position: absolute;
@@ -79,7 +179,7 @@ body{
 
 
 .main-footer {
-	background-color: #f7f7f7;
+	background-color: var(--white);
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
@@ -97,5 +197,5 @@ body{
 
 .footer-center ul{
     list-style: none;
-    color: black;
+    color: var(--black);
 }
